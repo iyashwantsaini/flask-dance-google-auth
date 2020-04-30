@@ -1,17 +1,6 @@
-Flask-Dance Example App: Google SQLAlchemy Edition
-==================================================
-
-This repository provides an example of how to use `Flask-Dance`_ with
-a SQLAlchemy storage. This particular repository uses Google as an
-OAuth provider, and it wires together the following Flask extensions:
-
 * `Flask-Dance`_
 * `Flask-SQLAlchemy`_
 * `Flask-Login`_
-
-You can run this code locally, or deploy it to Heroku_ to test it out.
-
-|heroku-deploy|
 
 Local Installation
 ``````````````````
@@ -32,10 +21,8 @@ Step 2: Install code and dependencies
 -------------------------------------
 Run the following commands on your computer::
 
-    git clone https://github.com/singingwolfboy/flask-dance-google-sqla.git
-    cd flask-dance-google-sqla
-    python3 -m venv venv
-    source venv/bin/activate
+    git clone --
+    cd --
     pip install -r requirements.txt
 
 These commands will clone this git repository onto your computer,
@@ -102,19 +89,3 @@ file, then you need to install the `python-dotenv`_ package using ``pip``::
     pip install python-dotenv
 
 Once the package is installed, try the ``flask run`` command again
-
-.. _Flask: http://flask.pocoo.org/docs/
-.. _Flask-Dance: http://flask-dance.readthedocs.org/
-.. _Flask-SQLAlchemy: http://flask-sqlalchemy.pocoo.org/
-.. _Flask-Login: https://flask-login.readthedocs.io
-.. _Google: https://myaccount.google.com/
-.. _Heroku: https://www.heroku.com/
-.. _environment variables: https://en.wikipedia.org/wiki/Environment_variable
-.. _oauthlib docs: http://oauthlib.readthedocs.org/en/latest/oauth2/security.html#envvar-OAUTHLIB_INSECURE_TRANSPORT
-.. _python-dotenv: https://github.com/theskumar/python-dotenv
-.. _virtual environment: https://docs.python.org/3.7/library/venv.html
-.. _Fork this GitHub repo: https://help.github.com/articles/fork-a-repo/
-
-.. |heroku-deploy| image:: https://www.herokucdn.com/deploy/button.png
-   :target: https://heroku.com/deploy
-   :alt: Deploy to Heroku
