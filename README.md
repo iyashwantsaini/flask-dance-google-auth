@@ -1,0 +1,5 @@
+*flask run*
+
+1. LOGIN
+2. REGISTER
+3. DASHBOARD
