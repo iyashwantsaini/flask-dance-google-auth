@@ -21,10 +21,10 @@ def logout():
 
 @app.route("/")
 def index():
-        if google_logged_in:
-            return render_template("dashboard.html")
-        else:
-            return render_template("login.html")
+        # if google_logged_in:
+        #     return render_template("dashboard.html")
+        # else:
+        return render_template("login.html")
 
 @app.route("/register")
 def register():
@@ -34,3 +34,6 @@ def register():
 def dashboard():
     return render_template("dashboard.html")
 
+@app.route("/profile")
+def profile():
+    return render_template("profile.html")
