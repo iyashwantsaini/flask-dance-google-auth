@@ -46,17 +46,17 @@
         </div>
         <ul class="navbar-nav mr-auto">
           <li class="nav-item">
-            <a href="dashboard.html" class="nav-link">
+            <a href="/dashboard" class="nav-link">
               <span class="nav-link-inner--text">Dashboard</span>
             </a>
           </li>
           <li class="nav-item">
-            <a href="login.html" class="nav-link">
+            <a href="{{ url_for("google.login") }}" class="nav-link">
               <span class="nav-link-inner--text">Login</span>
             </a>
           </li>
           <li class="nav-item">
-            <a href="register.html" class="nav-link">
+            <a href="/register" class="nav-link">
               <span class="nav-link-inner--text">Register</span>
             </a>
           </li>
@@ -120,7 +120,7 @@
             <div class="card-header bg-transparent pb-5">
               <div class="text-muted text-center mt-2 mb-4"><small>Sign up with</small></div>
               <div class="text-center">
-                <a href="#" class="btn btn-neutral btn-icon">
+                <a href="{{ url_for("google.login") }}" class="btn btn-neutral btn-icon">
                   <span class="btn-inner--icon"><img src="../static/img/icons/common/google.svg"></span>
                   <span class="btn-inner--text">Google</span>
                 </a>
