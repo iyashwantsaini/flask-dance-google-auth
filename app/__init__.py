@@ -30,6 +30,8 @@ from .cli import create_db
 # run_with_ngrok(app)
 
 app = Flask(__name__)
+import os 
+os.environ['OAUTHLIB_INSECURE_TRANSPORT'] = '1'
 app.config.from_object(Config)
 app.register_blueprint(blueprint, url_prefix="/login")
 app.cli.add_command(create_db)
